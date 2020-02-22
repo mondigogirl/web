@@ -336,11 +336,37 @@ a {
 }
 
 .phrases {
+    float: left;
+    width: 808px;
+    padding-top: 123px;
+    padding-left: 240px;
+}
 
+.people_phrases {
+    color: #222224;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    overflow: hidden;
 }
 
 .people_photo {
     float: left;
+    padding-left: 240px;
+    padding-right: 28px;
+}
+
+.rechtangle {
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+
+.rechtangle-active {
+    width: 38px;
+    height: 4px;
+    background-color: #f16d7f;
 }
 
 .end-slider {
@@ -349,9 +375,8 @@ a {
     width: 1618px;
     height: 438px;
     background-color: #f2f2f2;
-    background: url(img/Layer_41.png);
-    background-opacity: 0.2; 
-    
+    background: url(img/Layer_41.png) no-repeat;
+    display: flex;    
 }
 
 .end_information {
@@ -366,6 +391,10 @@ a {
     cursor: pointer;
 }
 
+.subscribe_form {
+    padding-top: 123px;
+}
+
 .subscribe_email {
     position: relative;
 }
@@ -376,6 +405,8 @@ a {
     border-radius: 0 23px 23px 0;
     background-color: #f16d7f;
     position: absolute;
+    left: 250px;
+    color: #ffffff;
 }
 
 footer {
