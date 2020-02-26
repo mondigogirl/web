@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/9f7f4520e1.js"></script>
 </head>
 
 <body>
-    <div class="header center">
+    <header class="header center">
         <div class="header__left">
             <a href="#" class="logo">
-                <img class="logo__img" src="img/18.png" alt="logo">BRAND
+                <img class="logo__img" src="img/18.png" alt="logo">BRAN<span class="color_change">D</span>
             </a>
             <form class="header__form" action="#">
                 <div class="header__browse">Browse <span class="triangle"></span> </div>
@@ -26,8 +26,8 @@
             <a href="#" class="header__cart"><img class="header__cart" src="img/cart.png" alt="cart"></a>
             <a href="" class="button">My Account</a>
         </div>
-    </div>
-    <div class="nav center">
+    </header>
+    <nav class="nav_main center">
         <ul class="menu">
             <li class="menu__list"><a class="menu__link" href="#">Home </a></li>
             <li class="menu__list"><a class="menu__link" href="#">Man </a></li>
@@ -37,74 +37,158 @@
             <li class="menu__list"><a class="menu__link" href="#">Featured </a></li>
             <li class="menu__list"><a class="menu__link" href="#">Hot Deals</a></li>
         </ul>
-    </div>
+    </nav>
     <div class="promo center">
         <div class="promo__content">
             <h1 class="promo__h1">THE BRAND</h1>
             <h2 class="promo__h2">OF LUXERIOUS <span class="colortext">FASHION</span></h2>
         </div>
     </div>
-    <div class="products center">
-        <div class="products_left">
-            <div class="product_container"><img class="products_img" src="img/Layer_30.png" alt="forMen">
-                <div class="product_title">HOT DEAL<br><span class="product_title_red"> FOR MEN</span></div>
-            </div>
-            <div class="product_container product_container2"><img class="products_img" src="img/Layer_37.png" alt="accesories">
-                <div class="product_title">LUXIROUS&amp;trendy<br><span class="product_title_red">ACCESORIES</span></div>
+    <div class="sale center">
+        <div class="sale__box">
+            <div class="sale__big" style="background-image: url(img/Layer_30.png);">
+                <div class="sale__title">HOT DEAL<br><span class="sale_title_red"> FOR MEN</span></div>
+            </div> 
+            <div class="sale__mini sale__mini__left">
+                <div class="sale__title">LUXIROUS&amp;trendy<br><span class="sale_title_red">ACCESORIES</span></div>
             </div>
         </div>
-        <div class="products_right">
-            <div class="product_container"><img class="products_img" src="img/Layer_32.png" alt="forWomen">
-                <div class="product_title">30% offer<br><span class="product_title_red"> women</span></div>
-            </div>
-            <div class="product_container"><img class="products_img" src="img/Layer_31.png" alt="forKids">
-                <div class="product_title">new arrivals<br><span class="product_title_red">FOR kids</span></div>
+        <div class="sale__box">
+            <div class="sale__mini" style="background-image: url(img/Layer_32.png);">
+                <div class="sale__title">30% offer<br><span class="sale_title_red"> women</span></div>
+            </div> 
+            <div class="sale__big" style="background-image: url(img/Layer_31.png);">
+                <div class="sale__title">new arrivals<br><span class="sale_title_red">FOR kids</span></div>
             </div>
         </div>
     </div>
     <div class="product_items center">
         <h4 class="items_title">Fetured Items</h4>
         <p class="items_text">Shop for items based on what we featured in this week</p>
-        <div class="items-container">
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_2.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_3.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_4.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_5.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_6.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_7.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_8.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
-            <div class="product-wrapper"><a href="#" class="item_link"><img src="img/Layer_9.png" alt="item" class="items-img"></a><span class="img-text">Mango People T-shirt</span><br><span class="img-price">$52.00</span></div>
+        <div class="items-box center">
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_2.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_3.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_4.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_5.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_6.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_7.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_8.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
+            <div class="item">
+                <a href="#" class="item_link">
+                    <img class="item-img" src="img/Layer_9.png" alt="item">
+                </a>
+                <div class="item_content">
+                    <a href="#" class="item_name">Mango People T-shirt</a>
+                    <p class="item_price">$52.00</p>
+                </div>
+                <a href="#" class="item-add">Add to Cart</a>
+            </div>
         </div>
     </div>
-    <div class="button-items center"><a href="#" class="button-products">Browse All Product<i class="far fa-long-arrow-alt-right icon-browse"></i></a>
-    </div>
+    
+    <a href="#" class="button-products">Browse All Product<i class="far fa-long-arrow-alt-right icon-browse"></i></a>
+    
     <div class="offer center">
-        <div class="discount"><img src="img/Image.png" alt="discount-image" class="discount_back">
-            <div class="discount_text">30% <span style="color:#f16d7f">OFFER</span><span style="font-size: 32px; letter-spacing: 0.9px;"><br>FOR WOMEN</span></div>
+        <div class="discount" style="background-image: url(img/Image.png);">
+            <div class="discount_text">30% OFFER <br>FOR WOMEN</div>
         </div>
         <div class="offer_rules">
-            <div class="offer_punkt"><img src="img/Forma_1.svg" alt="img" class="img_punkt">
-                <h3 class="punkt_title">Free Delivery</h3>
-                <p class="punkt_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p></div>
-            <div class="offer_punkt"><img src="img/Forma_1(1).svg" alt="img" class="img_punkt">
-                <h3 class="punkt_title">Sales & discounts</h3>
-                <p class="punkt_text"></p></div>
-            <div class="offer_punkt"><img src="img/Forma_1(2).svg" alt="img" class="img_punkt">
-                <h3 class="punkt_title">Sales & discounts</h3>
-                <p class="punkt_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            <div class="offer_content">
+                <a class="offer_punkt"><img src="img/delivery.svg" alt="img" class="img_punkt"></a>
+                <div class="offer_text">
+                    <h3 class="punkt_title">Free Delivery</h3>
+                    <p class="punkt_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="offer_content">
+                <a class="offer_punkt"><img src="img/percent.svg" alt="img" class="img_punkt"></a>
+                <div class="offer_text">
+                    <h3 class="punkt_title">Sales & discounts</h3>
+                    <p class="punkt_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="offer_content">
+                <a class="offer_punkt"><img src="img/quality.svg" alt="img" class="img_punkt"></a>
+                <div class="offer_text">
+                    <h3 class="punkt_title">Quality assurance</h3>
+                    <p class="punkt_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="end-slider center">
-        <div class="phrases clearfix">
-            <div class="people_photo clearfix">
+        <div class="phrases">
+            <div class="people_photo">
                 <img src="img/Layer_40.png" alt="photo">
             </div>
             <blockquote class="people_phrases">
                 <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
             </blockquote>
             <p class="people_name">Bin Burhan<br>Dhaka, Bd</p>
-            <div class="phrases_pagination clearfix">
+            <div class="phrases_pagination">
                 <a href="#" class="rechtangle"></a>
                 <a href="#" class="rechtangle rechtangle-active"></a>
                 <a href="#" class="rechtangle"></a>
@@ -119,19 +203,41 @@
             </form>
         </div>
     </div>
-    <div class="end_information">
-        <div class="our_information"><a href="#" class="logo">
-            <img class="logo__img" src="img/18.png" alt="logo">BRAND
+    <footer class="bottom center">
+        <div class="our_information">
+            <a href="#" class="logo">
+                <img class="logo__img" src="img/18.png" alt="logo">BRAN<span class="color_change">D</span>
             </a>
             <p class="end-text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
             <p class="end-text">Efficiently plagiarize 24/365 action items and focused infomediaries.Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
         </div>
-        <div class="global_links">
-            
+        <div class="category_links">
+            <h3 class="title_links">COMPANY</h3>
+            <a href="#" class="name_links">Home</a> 
+            <a href="#" class="name_links">Shop</a>
+            <a href="#" class="name_links">About</a>
+            <a href="#" class="name_links">How It Works</a>
+            <a href="#" class="name_links">Contact</a>
         </div>
-    </div>
-    <footer class="center">
-        <p class="footer">&copy;2017  Brand  All Rights Reserved.</p>
+        <div class="category_links">
+            <h3 class="title_links">INFORMATION</h3>
+            <a href="#" class="name_links">Tearms & Condition</a>
+            <a href="#" class="name_links">Privacy Policy</a>
+            <a href="#" class="name_links">How to Buy</a>
+            <a href="#" class="name_links">How to Sell</a>
+            <a href="#" class="name_links">Promotion</a>
+        </div>
+        <div class="category_links">
+            <h3 class="title_links">SHOP CATEGORY</h3>
+            <a href="#" class="name_links">Men</a>
+            <a href="#" class="name_links">Women</a>
+            <a href="#" class="name_links">Child</a>
+            <a href="#" class="name_links">Apparel</a>
+            <a href="#" class="name_links">Brows All</a>
+        </div> 
+    </footer>
+    <footer class="main center">
+        <p class="footer-text">&copy;2017  Brand  All Rights Reserved.</p>
         <div class="footer_right">
             <a href="#" class="sotial"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="sotial"></a>
